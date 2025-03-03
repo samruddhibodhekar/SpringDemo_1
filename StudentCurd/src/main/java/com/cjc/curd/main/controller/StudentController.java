@@ -12,7 +12,7 @@ public class StudentController
 	@PostMapping("/postData")
 	public String postData(@RequestBody Student s)
 	{
-		
+		System.out.println("Sushant khilare");
 		return "Update Data";
 	}
 
