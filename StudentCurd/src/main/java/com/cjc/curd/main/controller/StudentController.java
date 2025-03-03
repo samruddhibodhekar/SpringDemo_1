@@ -1,5 +1,6 @@
 package com.cjc.curd.main.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,5 +16,14 @@ public class StudentController
 		System.out.println("Sushant khilare");
 		return "Update Data";
 	}
+	@GetMapping("/getAllData")
+	public String getData()
+	{
+		return "list";
+	}
+	
+	
+	
+	
 
 }
